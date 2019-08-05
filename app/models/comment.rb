@@ -7,7 +7,7 @@ class Comment < ActiveRecord::Base
     self.user = User.find_or_create_by(username: user_attributes[:username])
   end
 
-  def user_rejectable?(user_attributes)
-    user_attributes[:username].blank?
-  end
+  #def user_rejectable?(user_attributes)
+#    user_attributes[:username].blank?
+#  end
 end
